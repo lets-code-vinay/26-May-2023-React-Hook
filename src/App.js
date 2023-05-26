@@ -37,9 +37,7 @@ function App() {
 
       <div style={{ marginTop: "15%" }}>
         <button
-          // onMouseOver={handleMouseHover}
           style={{ color: changeColor, backgroundColor: changeBackgroundColor }}
-          // style={{ color: changeColor, backgroundColor: changeBackgroundColor }}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
         >
