@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import Hooks from "./Hooks";
@@ -31,11 +30,18 @@ function App() {
   };
   return (
     <div className="App">
-      <h4 style={{ marginTop: "15%" }}>{changeName}</h4>
-      <button onClick={handleChangeName}>ChangeName</button>
-      <button onClick={handleChangeName2}>ChangeName2</button>
-
-      <div style={{ marginTop: "15%" }}>
+      <div className="changeNameMainDiv w-25">
+        <h4 className="m-3 text-center">{changeName}</h4>
+        <div className="text-center">
+          <button onClick={handleChangeName} className="m-2">
+            ChangeName
+          </button>
+          <button onClick={handleChangeName2} className="m-2">
+            ChangeName2
+          </button>
+        </div>
+      </div>
+      <div style={{ marginTop: "1%" }}>
         <button
           style={{ color: changeColor, backgroundColor: changeBackgroundColor }}
           onMouseMove={handleMouseMove}
