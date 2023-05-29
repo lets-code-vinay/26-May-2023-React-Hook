@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Hooks from "./Hooks";
+import GetApiCall from "./Component/GetApiCall";
 
 function App() {
   const [changeName, setChangeName] = useState("Ashutosh");
@@ -52,6 +53,8 @@ function App() {
       </div>
 
       <Hooks />
+
+      <GetApiCall />
     </div>
   );
 }
