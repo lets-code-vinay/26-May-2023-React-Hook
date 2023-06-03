@@ -54,20 +54,22 @@ const GetApiCall = () => {
     <>
       <p>this is get api component</p>
       {/* {[1, 2, 3, 4, "test"].map((item, i) => console.log("item", item))} */}
-      {data?.map((item, index) => {
-        console.log("item", item);
-        return (
-          <>
-            <img src={item?.thumbnail} alt="images_show" />
-            <h4>Title: {item?.title}</h4>
-            <h6>Brand: {item?.brand}</h6>
-            <p>Description: {item?.description}</p>
-            <h5>Price: {item?.price}</h5>
-            <p>Rating: {item?.rating}</p>
-            <h3>Stock: {item?.stock}</h3>
-          </>
-        );
-      })}
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {data?.map((item, index) => {
+          console.log("item", item);
+          return (
+            <div style={{ width: "20rem", margin: "5%" }}>
+              <img src={item?.thumbnail} alt="images_show" />
+              <h4>Title: {item?.title}</h4>
+              <h6>Brand: {item?.brand}</h6>
+              <p>Description: {item?.description}</p>
+              <h5>Price: {item?.price}</h5>
+              <p>Rating: {item?.rating}</p>
+              <h3>Stock: {item?.stock}</h3>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 };
