@@ -4,6 +4,7 @@ import GetApiCall from "./Component/GetApiCall";
 import PostApiTest from "./Component/PostApiTest";
 import CountingButtonComponent from "./Component/CountingButtonComponent";
 import PutAPiTest from "./Component/PutApiTest";
+import { TodoComponent } from "./Component/TodoComponent";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Hooks />
       <GetApiCall />
       <PostApiTest /> */}
-      <PutAPiTest />
+      {/* <PutAPiTest /> */}
+      <TodoComponent />
     </div>
   );
 }
